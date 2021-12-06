@@ -11,7 +11,7 @@ $(function() {
 	});
 	
 	
-	var wSize = $(window).width();
+	/*var wSize = $(window).width();
 	$(window).resize(function() {
 		if(wSize >= 992) {
 			$('.menu_btn').removeClass('active');
@@ -20,6 +20,11 @@ $(function() {
 			$('.menu_btn').addClass('active');
 			$('.navbar-collapse').addClass('show');
 		}
+	});*/
+	
+	$(window).on('resize', function() {
+		$('.menu_btn').removeClass('active');
+		$('.navbar-collapse').removeClass('show');
 	});
 	
 });
