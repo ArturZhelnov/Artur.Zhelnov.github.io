@@ -168,7 +168,82 @@ body {
 	opacity: 1;
 }
 /*UP ENDS*/
-
+/* PARTNERS START */
+#body_start .partners .wrapper {
+    max-width: 600px;
+}
+#body_start .partners-list {
+    margin: 0 0 1em;
+    list-style: none;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#body_start .partners-list li {
+    width: 85px;
+    text-align: center;
+}
+#body_start .partners-list a {
+    width: 75px;
+    margin: 10px 5px 5px;
+    padding: 10px;
+    padding-top: 60px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center top 10px;
+	background-size: 45px 40px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #fff;
+	text-decoration: none;
+	background-color: #6c757d;
+    -webkit-transition: .2s background-color ease-in-out, .2s box-shadow ease-in-out, .2s border-color ease-in-out;
+    transition: .2s background-color ease-in-out, .2s box-shadow ease-in-out, .2s border-color ease-in-out;
+}
+#body_start .partners-list a.rakvere {
+    background-image: url(../../images/partners/rakvere.png);
+}
+#body_start .partners-list a.kalev {
+    background-image: url(../../images/partners/kalev.svg);
+}
+#body_start .partners-list a.ylikool {
+    background-image: url(../../images/partners/ylikool.png);
+    background-size: 40px 40px;
+}
+#body_start .partners-list a:hover {
+    border-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.06),0 4px 6px rgba(0,0,0,0.1);
+}
+#body_start .partners-list a.rakvere:hover {
+	background-color: #198754;
+}
+#body_start .partners-list a.kalev:hover {
+	background-color: #0d6efd;
+}
+#body_start .partners-list a.ylikool:hover {
+	background-color: #004ba0;
+}
+@media (max-width: 768px){
+	#body_start .partners-list li {
+		width: 25%;
+		text-align: left;
+	}
+	#body_start .partners-list a {
+		width: calc(100% - 10px);
+		margin: 10px 5px 0;
+		padding: 20px;
+		padding-left: 65px;
+		background-position: 10px center;
+	}
+}
+@media (max-width: 600px){
+	#body_start .partners-list li {
+		width: 50%;
+	}
+}
+/* PARTNERS END */
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
 	.userImg {
