@@ -173,9 +173,9 @@ a {
 .info_tabs_content.active {
 	display: block;
 }
-.slick-initialized .slick-slide {
+/*.slick-initialized .slick-slide {
 	display: flex;
-}
+}*/
 .slick-arrow {
 	position: absolute;
 	left: 20%;
